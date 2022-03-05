@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Assn 1</title>
+</head>
+<body>
+    <h1>Assignment 1 Twitter REST API</h1>
+    <script>src = 'express.js'</script>
+
+    <p> 
+        <form action = '/api/tweets/' method = 'get'>
+            <label for= "Get Tweets">Get All Tweets:</label><br/>
+            <input type = 'submit' value = 'Get Tweets'>
+        </form>
+        <br/>
+        <form action = '/api/id/' method = 'get'>
+            <label for= "Get ID's">Get User ID's</label><br/>
+            <input type = 'submit' value = 'Get IDs'>
+            </form>
+        <br/>
+        <form action = '/api/tweetIds/' method = 'get'>
+            <label for= "Get Tweet ID's">Get Tweet ID's</label><br/>
+            <input type = 'submit' value = 'Get Tweet IDs'>
+            </form>
+        <br/>
+        <form action = '/api/tweet/:id' method = 'get'>
+            <label for= "Get Tweet">Get Tweet by Entering Tweet ID: </label><br/>
+            <input type = 'number' value = 'Tweet ID'>
+            </form>
+        <br/>
+        <form action = '/api/newTweet/:id/:text' method = 'post'>
+            <label for= "Create Tweet">Create a Tweet by entering an ID and text for a tweet: </label><br/>
+            <input type = 'number' value = 'Tweet ID' multiple>
+            <input type = 'text' value = 'Tweet Text'>
+            <input type = 'submit' value = 'Make Tweet'>
+            </form>
+        <br/>
+        <form action = '/api/delete/:id' method = 'delete'>
+            <label for= "Delete Tweet">Delete tweet by entering tweet ID: </label><br/>
+            <input type = 'number' value = 'Tweet ID'>
+            </form>
+    </p>
+</body>
+</html>
