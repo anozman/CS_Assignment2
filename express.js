@@ -155,6 +155,11 @@ function delete_tweet(tweet_id)
     return false;
 }
 
+function test_print(){
+
+    console.log("Test code");
+}
+
 /**
  * This sets the local Node server to the predefined port (3000)
  */
